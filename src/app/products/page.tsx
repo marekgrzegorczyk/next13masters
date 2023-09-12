@@ -53,7 +53,7 @@ const products: ProductListItemType[] = [
 	},
 ];
 
-export default function Products() {
+export default function Page() {
 	return (
 		<section className="mx-auto max-w-md p-12 sm:max-w-6xl sm:py-2 ">
 			<ProductList products={products} />
