@@ -9,6 +9,6 @@ export const ProductListItem = (product: ProductListItemType) => {
 				<ProductListItemCoverImage image={product.image} />
 				<ProductListItemDesc product={product} />
 			</article>
-		</li> 
+		</li>
 	);
 };
