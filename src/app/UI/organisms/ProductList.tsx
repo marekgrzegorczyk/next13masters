@@ -22,8 +22,6 @@ export const ProductList = ({
 						image={{
 							src: product.image.src,
 							alt: product.image.alt,
-							width: product.image.width,
-							height: product.image.height,
 						}}
 					/>
 				);

@@ -3,5 +3,5 @@ export type ProductListItemType = {
 	name: string;
 	category: string;
 	price: number;
-	image: { src: string; alt: string; width: number; height: number };
+	image: { src: string; alt: string; };
 };
