@@ -34,7 +34,8 @@ export default async function ProductDetailsPage({
 				/>
 			</article>
 			<aside>
-				<Suspense>
+				<Suspense fallback={"Ładowanie..."}> 
+				{/* można dodać spinner  */}
 					<SuggestedProductsList />
 				</Suspense>
 			</aside>

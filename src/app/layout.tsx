@@ -32,7 +32,13 @@ export default function RootLayout({
 				<section className="lg: mx-auto max-w-md p-12 sm:max-w-2xl sm:py-16 md:max-w-4xl lg:max-w-7xl">
 					{children}
 				</section>
-				<footer>
+				<footer >
+					<div className="flex flex-col items-center">
+						<ActiveLink href="/privacy-policy">Privacy Policy</ActiveLink>
+						<ActiveLink href="/terms-and-conditions">
+							Terms and Conditions
+						</ActiveLink>
+					</div>
 					<p className="text-center text-sm text-gray-500">© 2023</p>
 				</footer>
 			</body>
