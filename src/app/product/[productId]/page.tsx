@@ -1,8 +1,8 @@
+import { Suspense } from "react";
 import { getProductById } from "@/api/products";
 import { ProductListItemCoverImage } from "@/app/UI/atoms/ProductListItemCoverImage";
 import { ProductListItemDesc } from "@/app/UI/atoms/ProductListItemDesc";
 import { SuggestedProductsList } from "@/app/UI/organisms/SuggestedProductsList";
-import { Suspense } from "react";
 
 export default async function ProductDetailsPage({
 	params,
@@ -34,8 +34,8 @@ export default async function ProductDetailsPage({
 				/>
 			</article>
 			<aside>
-				<Suspense fallback={"Ładowanie..."}> 
-				{/* można dodać spinner  */}
+				<Suspense fallback={"Ładowanie..."}>
+					{/* można dodać spinner  */}
 					<SuggestedProductsList />
 				</Suspense>
 			</aside>

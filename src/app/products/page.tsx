@@ -1,6 +1,5 @@
-import { getProductsList } from "@/api/products";
 import { ProductList } from "../UI/organisms/ProductList";
-import { type ProductListItemType } from "../UI/types";
+import { getProductsList } from "@/api/products";
 
 export type ProductResponseItem = {
 	id: string;

@@ -1,14 +1,13 @@
 "use client"; // ustawia komponent jako client a nie server
 
 import {
-	useRouter,
 	useParams,
 	useSearchParams,
 	usePathname,
 	useSelectedLayoutSegment,
 	useSelectedLayoutSegments,
 } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const ProductCounter = () => {
 	const [counter, setCounter] = useState(0);

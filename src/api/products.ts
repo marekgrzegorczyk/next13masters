@@ -1,5 +1,5 @@
-import { ProductListItemType } from "@/app/UI/types";
-import { ProductResponseItem } from "@/app/products/page";
+import { type ProductResponseItem } from "@/app/products/page";
+import { type ProductListItemType } from "@/app/UI/types";
 
 const productResponseItemToProductListItemType = (
 	product: ProductResponseItem,

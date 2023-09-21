@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Link from "next/link";
 import { ActiveLink } from "./UI/atoms/ActiveLink";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,7 +31,7 @@ export default function RootLayout({
 				<section className="lg: mx-auto max-w-md p-12 sm:max-w-2xl sm:py-16 md:max-w-4xl lg:max-w-7xl">
 					{children}
 				</section>
-				<footer >
+				<footer>
 					<div className="flex flex-col items-center">
 						<ActiveLink href="/privacy-policy">Privacy Policy</ActiveLink>
 						<ActiveLink href="/terms-and-conditions">
