@@ -1,6 +1,7 @@
 import { ProductList } from "../UI/organisms/ProductList";
 import { getProductsList } from "@/api/products";
 
+
 export type ProductResponseItem = {
 	id: string;
 	title: string;
