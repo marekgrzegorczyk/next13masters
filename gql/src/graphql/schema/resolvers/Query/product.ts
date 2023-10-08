@@ -1,16 +1,15 @@
-import { faker } from "@faker-js/faker";
+import { prisma } from "../../../../../prisma/src/db";
 import type { QueryResolvers } from "./../../../types.generated";
+
 export const product: NonNullable<QueryResolvers["product"]> = async (
 	_parent,
 	arg,
 	_ctx,
 ) => {
-	const name = faker.commerce.productName();
-	return {
-		id: arg.id,
-		name,
-		slug: faker.helpers.slugify(name),
-		price: faker.number.int({ min: 100, max: 10000 }),
-		description: faker.commerce.productDescription(),
-	};
+	const product = await prisma.product.findUnique({
+		where: {
+			id: arg.id,
+		},
+	});
+	return product;
 };
