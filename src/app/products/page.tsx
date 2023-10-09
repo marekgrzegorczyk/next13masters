@@ -1,6 +1,6 @@
 import { ProductList } from "../UI/organisms/ProductList";
-import { getProductsList } from "@/api/products";
-
+import { ProductsGetListDocument } from "@/gql/graphql";
+import { executeGraphql } from "@/api/products";
 
 export type ProductResponseItem = {
 	id: string;
@@ -19,7 +19,7 @@ export type ProductResponseItemRating = {
 };
 
 export default async function ProductsPage() {
-	const products = await getProductsList();
+	const { products } = await executeGraphql(ProductsGetListDocument);
 
 	return (
 		<section className="mx-auto max-w-md p-12 sm:max-w-6xl sm:py-2 ">
